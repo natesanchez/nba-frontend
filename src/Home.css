@@ -1,0 +1,24 @@
+.eachReturn {
+    margin: 28px;
+}
+
+.teamContainer {
+    background: #e3e3e3;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamImages {
+    height: 300px;
+    width: 325px;
+    border: 5px solid black;
+    background: white;
+}
+
+.teamImages:hover {
+    border: 5px solid black;
+    cursor: pointer;
+}
+

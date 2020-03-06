@@ -31,7 +31,6 @@ class Home extends Component {
                             <div>
                                 <img className="teamImages" src={item.logo} alt="team" />
                             </div>
-                            <p>{item.name}</p>
                         </Link>
                     </div>
                 );

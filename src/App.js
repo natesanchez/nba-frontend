@@ -21,18 +21,13 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <Link to='/'>
+          <Link className="headerLink" to='/'>
             <h1>NBA Hub</h1>
           </Link>
         </nav>
         <main>
           <Route path='/' exact component={Home} />
         </main>
-        <footer>
-          <div>
-            <h1>This is the footer</h1>
-          </div>
-        </footer>
       </div>
     );
   }
