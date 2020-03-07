@@ -1,0 +1,12 @@
+.champsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.returnedContainerChamps {
+    border: 2px solid #4a1aa3;
+    width: 50%;
+    margin: 15px;
+    padding: 10px;
+}

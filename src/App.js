@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Home from "./Home";
 import Team from "./Team";
+import Champs from "./Champs";
+import Legends from "./Legends";
 import { Route, Link, Switch, } from "react-router-dom";
 import './App.css';
 
@@ -27,7 +29,7 @@ class App extends Component {
           </Link>
 
           <Link className="headerLinkHome" to='/'>
-            <h1 className="title" >NBA Hub</h1>
+            <h1 className="title">NBA Hub</h1>
           </Link>
 
           <Link className="headerLinkLegends" to='/legends'>
@@ -38,6 +40,8 @@ class App extends Component {
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path="/team/:teamId" render={routerProps => (<Team {...routerProps} {...this.state} />)} />
+            <Route path='/championships' component={Champs} />
+            <Route path='/legends' component={Legends} />
           </Switch>
         </main>
       </div>

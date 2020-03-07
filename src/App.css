@@ -13,15 +13,19 @@ nav {
 }
 
 .title {
-  margin-right: 32px;
-  margin-left: 32px;
+  margin-right: 38px;
+  margin-left: 38px;
   color: white;
   font-family: 'Trade Winds', cursive;
 }
 
+
 .topLinks {
   color: #f7f7f7;
   font-family: 'Trade Winds', cursive;
+}
+.topLinks:hover {
+  color: yellow;
 }
 
 

@@ -1,0 +1,21 @@
+.returnedContainerLegends {
+    border: 2px solid black;
+    margin: 20px;
+    max-width: 38%;
+}
+
+.addLegend {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 40px;
+    margin-top: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: sans-serif;
+    float: right;
+}
