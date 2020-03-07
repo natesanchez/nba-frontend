@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import axios from 'axios';
 import './Legends.css';
 
 
@@ -21,7 +20,6 @@ class Legends extends Component {
                 .then(res => res.json())
                 .then(res => {
                     this.setState({ data: res });
-                    console.log(res)
                 });
         }
     }

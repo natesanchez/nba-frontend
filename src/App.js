@@ -3,6 +3,7 @@ import Home from "./Home";
 import Team from "./Team";
 import Champs from "./Champs";
 import Legends from "./Legends";
+import NewLegend from "./NewLegend";
 import { Route, Link, Switch, } from "react-router-dom";
 import './App.css';
 
@@ -42,6 +43,7 @@ class App extends Component {
             <Route path="/team/:teamId" render={routerProps => (<Team {...routerProps} {...this.state} />)} />
             <Route path='/championships' component={Champs} />
             <Route path='/legends' component={Legends} />
+            <Route path='/create-legend' component={NewLegend} />
           </Switch>
         </main>
       </div>
