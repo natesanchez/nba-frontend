@@ -9,7 +9,7 @@ class Legends extends Component {
         this.state = {
             name: null,
             team: null,
-            data: null
+            data: null,
         }
     }
 
