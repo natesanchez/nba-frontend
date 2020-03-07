@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from "./Home";
-import { Route, Link, } from "react-router-dom";
+import Team from "./Team";
+import { Route, Link, Switch, } from "react-router-dom";
 import './App.css';
 
 
@@ -21,12 +22,23 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <Link className="headerLink" to='/'>
-            <h1>NBA Hub</h1>
+          <Link className="headerLinkChamps" to='/championships'>
+            <h3 className="topLinks">Championships</h3>
+          </Link>
+
+          <Link className="headerLinkHome" to='/'>
+            <h1 className="title" >NBA Hub</h1>
+          </Link>
+
+          <Link className="headerLinkLegends" to='/legends'>
+            <h3 className="topLinks">Legends</h3>
           </Link>
         </nav>
         <main>
-          <Route path='/' exact component={Home} />
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path="/team/:teamId" render={routerProps => (<Team {...routerProps} {...this.state} />)} />
+          </Switch>
         </main>
       </div>
     );

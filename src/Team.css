@@ -1,0 +1,39 @@
+body {
+    background: #e3e3e3;
+}
+
+.returnedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.returnedImage {
+        height: 400px;
+        width: 425px;
+        border: 5px solid black;
+        background: white;
+}
+
+.teamName {
+    color: black;
+    margin: 22px;
+}
+
+.info {
+    margin: 8px;
+}
+
+.site {
+    height: 50px;
+    width: 185px;
+    font-size: 18px;
+    background: #0096e0;
+    color: #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}

@@ -27,7 +27,7 @@ class Home extends Component {
             let list = this.state.data.map(item => {
                 return (
                     <div className="eachReturn" key={item.teamId}>
-                        <Link className="imageLink" to={"/team/" + item.name}>
+                        <Link className="imageLink" to={"/team/" + item.teamId}>
                             <div>
                                 <img className="teamImages" src={item.logo} alt="team" />
                             </div>

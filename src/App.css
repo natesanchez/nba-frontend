@@ -12,16 +12,29 @@ nav {
   justify-content: center;
 }
 
-h1 {
-  margin-left: 20px;
-  float: left;
+.title {
+  margin-right: 32px;
+  margin-left: 32px;
   color: white;
   font-family: 'Trade Winds', cursive;
 }
 
+.topLinks {
+  color: #f7f7f7;
+  font-family: 'Trade Winds', cursive;
+}
 
-.headerLink {
+
+.headerLinkHome {
   text-decoration: none;
   color: black;
   font-size: 30px;
+}
+
+.headerLinkChamps {
+  text-decoration: none;
+}
+
+.headerLinkLegends {
+  text-decoration: none;
 }
