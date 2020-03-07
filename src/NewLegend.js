@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from 'react-router-dom';
 import Axios from "axios";
 
 class NewLegend extends Component {
@@ -12,8 +13,7 @@ class NewLegend extends Component {
         this.onChangeTeam = this.onChangeTeam.bind(this);
     }
 
-
-    onChangeName(e) {
+    onChangeName = (e) => {
         this.setState({
             name: e.target.value
         })
