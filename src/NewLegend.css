@@ -1,0 +1,42 @@
+.newLegendContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.submitForm {
+    border: 5px solid black;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formInput {
+    margin: 18px;
+}
+
+.inputLabel {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.inputBox {
+    height: 22px;
+    width: 160px;
+    font-size: 18px;
+}
+
+.submitLegend {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: sans-serif;
+}

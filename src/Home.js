@@ -13,7 +13,7 @@ class Home extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
         if (!this.state.data) {
-            fetch("http://localhost:4000/teams")
+            fetch("https://nba-pi.herokuapp.com/teams")
                 .then(res => res.json())
                 .then(res => {
                     this.setState({ data: res });

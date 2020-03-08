@@ -13,7 +13,7 @@ class Champs extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
         if (!this.state.data) {
-            fetch("http://localhost:4000/championships")
+            fetch("https://nba-pi.herokuapp.com/championships")
                 .then(res => res.json())
                 .then(res => {
                     this.setState({ data: res });

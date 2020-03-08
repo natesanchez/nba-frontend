@@ -16,7 +16,7 @@ class Legends extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
         if (!this.state.data) {
-            fetch("http://localhost:4000/legends")
+            fetch("https://nba-pi.herokuapp.com/legends")
                 .then(res => res.json())
                 .then(res => {
                     this.setState({ data: res });

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
+import './NewLegend.css';
 import Axios from "axios";
 
 class NewLegend extends Component {
@@ -26,38 +27,44 @@ class NewLegend extends Component {
     }
 
     onSubmit = (e) => {
-        e.preventDefault()
-        console.log("Submitted")
+        if (this.state.name === null || this.state.team === null) {
+            return
+        } else {
+            e.preventDefault()
+            console.log("Submitted")
 
-        const newLegend = {
-            name: this.state.name,
-            team: this.state.team
-        };
+            const newLegend = {
+                name: this.state.name,
+                team: this.state.team
+            };
 
-        Axios.post("http://localhost:4000/legends", newLegend)
-            .then(res => console.log(res))
-        this.setState({
-            name: null,
-            team: null
-        })
-        this.props.history.push("/legends");
+            Axios.post("https://nba-pi.herokuapp.com/legends", newLegend)
+                .then(res => console.log(res))
+            this.setState({
+                name: null,
+                team: null
+            })
+            this.props.history.push("/legends");
+        }
     }
 
     render() {
         return (
-            <div>
-                <h1>Add Legend</h1>
-                <form onSubmit={this.onSubmit}>
+            <div className="newLegendContainer">
+                <form className="submitForm" onSubmit={this.onSubmit}>
+                    <h1>Add Legend</h1>
+                    <br />
                     <div className="formInput">
-                        <label>Legend Name: </label>
-                        <input type="text" onChange={this.onChangeName} />
+                        <label className="inputLabel">Legend Name: </label>
+                        <input className="inputBox" type="text" onChange={this.onChangeName} />
                     </div>
 
                     <div className="formInput">
-                        <label>Legend Team: </label>
-                        <input type="text" onChange={this.onChangeTeam} />
+                        <label className="inputLabel">Legend Team: </label>
+                        <input className="inputBox" type="text" onChange={this.onChangeTeam} />
                     </div>
-                    <input type="submit" value="Add Legend" />
+                    <br />
+                    <input className="submitLegend" type="submit" value="Submit" />
                 </form>
             </div>
         )
