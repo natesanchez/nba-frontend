@@ -10,8 +10,8 @@ Fullstack (MERN Stack) web-app that uses an API that I created (NBA-Pi). Get the
 ![Site Image 4](img/add.png)
 
 # API 
-API Repository: https://github.com/natesanchez/NBA-Pi
-API Live: https://nba-pi.herokuapp.com/ 
+* API Repository: https://github.com/natesanchez/NBA-Pi
+* API Live: https://nba-pi.herokuapp.com/ 
 
 # Authors
 Nate Sanchez
