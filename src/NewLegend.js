@@ -44,7 +44,7 @@ class NewLegend extends Component {
                 name: null,
                 team: null
             })
-            this.props.history.push("/legends");
+            this.props.history.push("/");
         }
     }
 
